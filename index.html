@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Current Prices</title>
+  <title>Wifinder</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./styles.css">
@@ -17,9 +17,9 @@
 <body>
    <h3> Welcome to Wifinder </h3>
 
-   <p> There are <i id='device-count'></i> devices in the database</p>
-
     <h2> Configure Capturing </h2>
+    <button id='available-devices'> Run iwconfig </button>
+    <p id='available-devices-data'></p>
     <p> Device ID: <input id='device-id' type="text"> </p>
     <button id='set-monitor'> Set device to monitor </button>
     <button id='start-capture'> Start Capturing </button>

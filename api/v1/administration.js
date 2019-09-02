@@ -16,5 +16,12 @@ module.exports = {
 		      $('#status').css('background-color', 'red')
 		    }
 		  })
-  		}
+  		},
+  	availableDevices: function() {
+  	   return fetch(`${adminUrl}/available_devices`)
+			  .then(response => response.json())
+			  .then(data => {
+			    return data.body
+			})
+  	}
   }

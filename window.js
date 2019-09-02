@@ -10,6 +10,12 @@ $(() => {
 	  admin.checkStatus()
 	})
 
+	$("#available-devices").on("click", function(event) {
+		admin.availableDevices().then(availableDevices => {
+	  		$('#available-devices-data').text(availableDevices)
+		})
+	})
+
 	devices.count().then(count => {
 		$('#device-count').text(count)
 	})

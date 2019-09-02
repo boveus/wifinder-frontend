@@ -1,0 +1,15 @@
+{
+  "name": "wifinder-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for wifinder",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test"
+  },
+  "author": "Brandon Stewart",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.7"
+  }
+}

@@ -10,6 +10,12 @@ $(() => {
 	  admin.checkStatus()
 	})
 
+	$("#set-capture").on("click", function(event) {
+	  admin.setCaptureDevice($('#capture-device').val()).then(response => {
+	  	alert(response)
+	  })
+	})
+
 	$("#available-devices").on("click", function(event) {
 		admin.availableDevices().then(availableDevices => {
 	  		$('#available-devices-data').text(availableDevices)

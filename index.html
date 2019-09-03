@@ -18,15 +18,19 @@
    <h3> Welcome to Wifinder </h3>
 
     <h2> Configure Capturing </h2>
+
     <button id='available-devices'> Run iwconfig </button>
-    <p id='available-devices-data'></p>
-    <p> Device ID: <input id='device-id' type="text"> </p>
-    <button id='set-monitor'> Set device to monitor </button>
+      <div id='device-data-container'>     
+        <p id='available-devices-data'></p>
+      </div>
+
+    <p> Capture Device: <input id='capture-device' type="text"></input></p>
+    <button id='set-capture'> Set capture device</button>
+
     <button id='start-capture'> Start Capturing </button>
-    <input type="checkbox"> Verbose </input>
-    <br>
+
     <button id='device-show'> View Devices </button>
+
     <button id='check-status'> Check Status </button>
     <div id='status'> STATUS </div>
-
 </body>

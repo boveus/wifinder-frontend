@@ -23,5 +23,12 @@ module.exports = {
 			  .then(data => {
 			    return data.body
 			})
+  	},
+	setCaptureDevice: function(captureDevice) {
+	   return fetch(`${adminUrl}/set_capture_device/${captureDevice}`)
+		  .then(response => response.json())
+		  .then(data => {
+		    return data.message
+		})
   	}
   }

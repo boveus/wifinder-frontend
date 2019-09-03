@@ -1,3 +1,8 @@
 #available-devices-data {
     white-space: pre-wrap;
 }
+
+#device-data-container {
+	background: black;
+	color: white;
+}

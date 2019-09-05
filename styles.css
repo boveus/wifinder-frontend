@@ -1,8 +1,64 @@
+body {
+	font-family: 'Courier New';
+}
+
+#capture-box {
+	text-align: center;
+	top: 5px;
+	right: 50px;
+	position: absolute;
+}
+
+#status {
+	border-radius: 10px;
+	padding-top: 4px;
+	min-height: 40px;
+	max-width: 125px;
+	text-align: center;
+	background-color: yellow;
+	font-weight: 800;
+}
+
+
 #available-devices-data {
     white-space: pre-wrap;
+    font-size: 12px;
+    padding: 5px;
 }
 
 #device-data-container {
 	background: black;
 	color: white;
 }
+
+#device-data-container {
+	border-width: 2px;
+	border-color: black;
+	max-width: 500px;
+}
+
+#main {
+	margin-right: 15%;
+	margin-left: 15%;
+}
+
+#capture-device-container {
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+button {
+	border-radius: 10px;
+	background: #404040;
+	padding: 14px 12px;
+	border-color: white;
+	color: white;
+	font-weight: 800;
+	font-size: 14px;
+}
+button:hover {
+	cursor: pointer;
+}
+

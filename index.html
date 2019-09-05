@@ -15,22 +15,28 @@
 </head>
 
 <body>
-   <h3> Welcome to Wifinder </h3>
+  <div id='main'>
+   <h1> Wifinder </h1>
 
-    <h2> Configure Capturing </h2>
+    <div id='capture-box'>
+       <button id='check-status'> Refresh Status </button>
+       <button id='start-capture'> Start Capturing </button>
+       <div id='status'>Unknown</div>
+    </div>
+
+    <h3> Configure Capturing </h3>
 
     <button id='available-devices'> Run iwconfig </button>
       <div id='device-data-container'>     
         <p id='available-devices-data'></p>
       </div>
 
-    <p> Capture Device: <input id='capture-device' type="text"></input></p>
-    <button id='set-capture'> Set capture device</button>
+    <div id='capture-device-container'>
+      <p> Capture Device: <input id='capture-device' type="text"></input></p>
+      <button id='set-capture'> Set capture device</button>
+    </div>
 
-    <button id='start-capture'> Start Capturing </button>
 
     <button id='device-show'> View Devices </button>
-
-    <button id='check-status'> Check Status </button>
-    <div id='status'> STATUS </div>
+  </div>
 </body>

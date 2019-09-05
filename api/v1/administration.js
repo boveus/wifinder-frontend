@@ -12,8 +12,10 @@ module.exports = {
 		    if (response.status == 200)
 		    {
 		      $('#status').css('background-color', 'green')
+		      $('#status').text('Collecting Packets')
 		    } else {
 		      $('#status').css('background-color', 'red')
+		      $('#status').text('Not Collecting')
 		    }
 		  })
   		},

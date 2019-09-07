@@ -25,8 +25,15 @@ $(() => {
 		})
 	})
 
-	devices.count().then(count => {
-		$('#device-count').text(count)
+	$("#view-devices").on("click", function(event) {
+		devices.all().then( devices => {
+			$.each(devices, function (index, device) {
+				deviceHtml = `<li> 
+					ID: ${device.id}
+					MAC: ${device.mac_address}
+				</li>`
+			    $('#devices-index').append(deviceHtml)
+			});
+		})
 	})
-
 })

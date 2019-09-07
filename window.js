@@ -2,6 +2,9 @@ const devices = require('./api/v1/devices')
 const admin = require('./api/v1/administration')
 
 $(() => {
+    $( function() {
+    	$( "#tabs" ).tabs()
+    } )
 	$("#start-capture").on("click", function(event) {
 	  admin.startCapture()
 	})

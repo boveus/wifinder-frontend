@@ -11,32 +11,39 @@
     delete module.exports
   </script>
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="window.js"></script>
 </head>
 
 <body>
-  <div id='main'>
-   <h1> Wifinder </h1>
-
-    <div id='capture-box'>
+  <h1> Wifinder </h1>
+  <div id='tabs'>
+    <ul>
+      <li><a href="#tabs-1"><button>Configure Capturing</button></a></li>
+      <li><a href="#tabs-2"><button>View Devices</button></a></li>
+      <li><a href="#tabs-3"><button>View SSIDs</button></a></li>
+    </ul>
+    <div class='tab-view' id="tabs-1">
+      <h3> Configure Capturing </h3>
+      <div id='capture-box'>
        <button id='check-status'> Refresh Status </button>
        <button id='start-capture'> Start Capturing </button>
        <div id='status'>Unknown</div>
-    </div>
-
-    <h3> Configure Capturing </h3>
-
-    <button id='available-devices'> Run iwconfig </button>
-      <div id='device-data-container'>     
-        <p id='available-devices-data'></p>
       </div>
-
-    <div id='capture-device-container'>
-      <p> Capture Device: <input id='capture-device' type="text"></input></p>
-      <button id='set-capture'> Set capture device</button>
+      <button id='available-devices'> Run iwconfig </button>
+        <div id='device-data-container'>     
+          <p id='available-devices-data'></p>
+        </div>
+      <div id='capture-device-container'>
+        <p> Capture Device: <input id='capture-device' type="text"></input></p>
+        <button id='set-capture'> Set capture device</button>
+      </div>
     </div>
-
-
-    <button id='device-show'> View Devices </button>
+    <div class='tab-view' id="tabs-2">
+      <h3> View Devices</h3>
+    </div>
+    <div class='tab-view' id="tabs-3">
+      <h3> View SSIDs</h3>
+    </div>
   </div>
 </body>

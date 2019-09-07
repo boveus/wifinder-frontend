@@ -2,11 +2,21 @@ body {
 	font-family: 'Courier New';
 }
 
+#tabs li {
+	display: inline;
+}
+#tabs li button {
+	padding: 8px 6px;
+}
+
 #capture-box {
-	text-align: center;
-	top: 5px;
-	right: 50px;
-	position: absolute;
+	text-align: left;
+	margin-bottom: 40px;
+}
+
+.tab-view {
+	margin-right: 15%;
+	margin-left: 15%;
 }
 
 #status {
@@ -35,11 +45,6 @@ body {
 	border-width: 2px;
 	border-color: black;
 	max-width: 500px;
-}
-
-#main {
-	margin-right: 15%;
-	margin-left: 15%;
 }
 
 #capture-device-container {
